@@ -1,0 +1,2 @@
+participants = ["Benard", "June", "Aisha", "Kevin", "Zuri", "James", "Fatima", "David"]
+instructors = ["Alice", "Brian", "Cynthia", "Daniel"]

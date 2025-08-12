@@ -6,60 +6,11 @@ import time
 # ----------------------------
 # Participants and Instructors
 # ----------------------------
-participants = ["Benard", "June", "Aisha", "Kevin", "Zuri", "James", "Fatima", "David"]
-instructors = ["Alice", "Brian", "Cynthia", "Daniel"]
-
+# Import the list from participants.txt
 # ----------------------------
 # Questions and Answers
 # ----------------------------
-questions = {
-    "easy": [
-        "Who founded CSA?",
-        "When was CSA founded?",
-        "How many camps have been held?",
-        "First country where a CSA camp was held?",
-        "Which language is used for coding in CSA?"
-    ],
-    "medium": [
-        "Name 3 tutors in the current camp.",
-        "Name three countries impacted by CSA.",
-        "Where is Glasgow?",
-        "How many countries has CSA impacted?",
-        "Which years didn’t have a CSA camp?"
-    ],
-    "hard": [
-        "Who was president where the first CSA workshop was held?",
-        "What was the theme of the 2022 Women’s Conference?",
-        "Which institution has CSA partnered with in Rwanda?",
-        "What % of women applied in 2022?",
-        "Who is quoted in 2018 workshop testimonials?"
-    ]
-}
-
-structured_answers = {
-    'Easy': {
-        'Who founded CSA?': 'Dr.Sofiat Olaosebikan',
-        'When was CSA founded?': '2018',
-        'How many camps have been held?': '5',
-        'First country where a CSA camp was held?': 'Nigeria',
-        'Which language is used for coding in CSA?': 'Python'
-    },
-    'Medium': {
-        'Name 3 tutors in the current camp.': 'Fionnuala Johnson, Kenechie Omeke, Stephen McQuistin',
-        'Name three countries impacted by CSA.': 'Kenya, Nigeria, Rwanda',
-        'Where is Glasgow?': 'Scotland',
-        'How many countries has CSA impacted?': '12',
-        'Which years didn’t have a CSA camp?': '2020, 2023, 2024'
-    },
-    'Hard': {
-        'Who was president where the first CSA workshop was held?': 'Muhammadu Buhari',
-        'What was the theme of the 2022 Women’s Conference?': 'Breaking the Glass Ceiling',
-        'Which institution has CSA partnered with in Rwanda?': 'University of Rwanda',
-        'What % of women applied in 2022?': '47%',
-        'Who is quoted in 2018 workshop testimonials?': 'Deborah Oluwabunmi Joseph'
-    }
-}
-
+# Import from questions.txt
 points = {
     "easy": 1,
     "medium": 2,
@@ -69,37 +20,7 @@ points = {
 # ----------------------------
 # Flag Drawing Function
 # ----------------------------
-def draw_flag():
-    screen = Screen()
-    screen.title("CSA Legacy Flag")
-    t = Turtle()
-    t.speed(3)
-
-    # Draw a blue rectangle
-    t.penup()
-    t.goto(-100, 50)
-    t.pendown()
-    t.color("blue", "skyblue")
-    t.begin_fill()
-    for _ in range(2):
-        t.forward(200)
-        t.right(90)
-        t.forward(100)
-        t.right(90)
-    t.end_fill()
-
-    # Draw a white star (symbolic)
-    t.penup()
-    t.goto(-20, -10)
-    t.color("white")
-    t.begin_fill()
-    for _ in range(5):
-        t.forward(40)
-        t.right(144)
-    t.end_fill()
-
-    time.sleep(4)
-    screen.bye()
+# Figure out how to call the flag drawing class
 
 # ----------------------------
 # Ask and Process Question
